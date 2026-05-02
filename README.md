@@ -1,16 +1,108 @@
-# React + Vite
+# Expense Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack web application for managing personal expenses, built with modern web technologies.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **User Authentication**: Secure login and signup with password hashing
+- **Expense Tracking**: Add, edit, and delete transactions
+- **Dashboard**: Visual overview of expenses with interactive charts
+- **Budget Goals**: Set and monitor monthly budget goals
+- **Responsive Design**: Mobile-friendly interface using Tailwind CSS
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
+- React 19
+- Vite
+- Tailwind CSS
+- React Router
+- Recharts for data visualization
+- Axios for API calls
+- Lucide React for icons
 
-## Expanding the ESLint configuration
+### Backend
+- Node.js
+- Express.js
+- MySQL database
+- bcrypt for password hashing
+- CORS for cross-origin requests
+- dotenv for environment variables
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+### Prerequisites
+- Node.js (v14 or higher)
+- MySQL database
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/sayemkhan399/Expense-Management.git
+cd Expense-Management
+```
+
+2. Install frontend dependencies:
+```bash
+npm install
+```
+
+3. Install backend dependencies:
+```bash
+cd backend
+npm install
+```
+
+4. Set up the database:
+   - Create a MySQL database
+   - Update the `.env` file in the backend directory with your database credentials
+
+5. Start the backend server:
+```bash
+cd backend
+npm run dev
+```
+
+6. In a new terminal, start the frontend:
+```bash
+npm run dev
+```
+
+7. Open [http://localhost:5173](http://localhost:5173) in your browser
+
+## Available Scripts
+
+- `npm run dev` - Starts the development server
+- `npm run build` - Builds the app for production
+- `npm run preview` - Previews the production build
+- `npm run lint` - Runs ESLint
+
+## Backend Scripts
+
+- `npm start` - Starts the server in production mode
+- `npm run dev` - Starts the server with nodemon for development
+
+## Project Structure
+
+```
+expense-management/
+├── backend/          # Express.js API server
+├── public/           # Static assets
+├── src/
+│   ├── components/   # React components
+│   ├── routes/       # Application routes
+│   ├── assets/       # Images and other assets
+│   └── ...
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is open source and available under the [ISC License](https://opensource.org/licenses/ISC).
