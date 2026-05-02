@@ -81,7 +81,7 @@ npm run dev
 ## Backend Scripts
 
 - `npm start` - Starts the server in production mode
-- `npm run dev` - Starts the server with nodemon for development
+- `nodemon start` - Starts the server with nodemon for development
 
 ## Project Structure
 
